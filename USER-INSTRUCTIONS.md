@@ -1,4 +1,4 @@
-# Instructions for Use
+# Instructions to Interact with the Asset Manager Service 
 
 ## Features
 
@@ -21,6 +21,8 @@ Date: Thu, 24 May 2018 22:36:20 GMT
 
 {"id":"0ba1b7dc00a142d28c5ff13b20ed97bf","upload_url":"https://xxxs3bucketnamexxx.s3.us-west-2.amazonaws.com/e33638d0df504175814ba97dfc60ca8c?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20180524T223620Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3599&X-Amz-Credential=AKIAIDLYXSZC3FGDOWBQ%2F20180524%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Signature=2a246886de3dd36604a4ec951a8546be5558b98fabb2f887065f3de008775f9d"}
 ```
+
+The response contains two values, `id` and `upload_url`. The `id` is the name of the asset in S3 and the `upload_url` is the pre-signed URL that you can use to upload your asset.
 
 **Ex.** Upload the asset using the "upload_url" (HTTP PUT).
 ```
@@ -69,6 +71,8 @@ Date: Thu, 24 May 2018 22:54:49 GMT
 
 {"Download_url":"https://xxxs3bucketnamexxx.s3.us-west-2.amazonaws.com/e33638d0df504175814ba97dfc60ca8c?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20180524T225449Z&X-Amz-SignedHeaders=host&X-Amz-Expires=59&X-Amz-Credential=AKIAIDLYXSZC3FGDOWBQ%2F20180524%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Signature=32549a16683620e3b83e9bc343b3d83cdc7c1333f540fa53d5095aaf7c660d35"}
 ```
+
+The response contains one value, `Download_url`. The `Download_url` is the pre-signed URL that you can use to download your asset.
 
 **Ex.** Download the asset using the "Download_url" (HTTP GET).
 ```
