@@ -28,14 +28,12 @@ The Asset Manager Service is a [Spring Boot](https://projects.spring.io/spring-b
 
 1. Clone this repository to your local machine. Use the command-line git client or your favorite source code repository management tool.
 
-    **Ex.**
     ```
     $ git clone https://github.com/bpmericle/asset-manager.git
     ```
 
 2. Build the project. The resulting artifact will be located in the `target` directory from the root of the project.
 
-    **Ex.**
     ```
     $ cd asset-manager
     $ mvn clean package

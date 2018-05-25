@@ -46,7 +46,8 @@ $ curl -i -w "\n" -H "Content-Type: application/json" -d '{"Status":"uploaded"}'
 ```
 
 **Ex.**
-```$ curl -i -w "\n" -H "Content-Type: application/json" -d '{"Status":"uploaded"}' -X PUT http://localhost:8080/asset/e33638d0df504175814ba97dfc60ca8c
+```
+$ curl -i -w "\n" -H "Content-Type: application/json" -d '{"Status":"uploaded"}' -X PUT http://localhost:8080/asset/e33638d0df504175814ba97dfc60ca8c
 HTTP/1.1 200 
 Content-Length: 0
 Date: Thu, 24 May 2018 22:52:05 GMT
